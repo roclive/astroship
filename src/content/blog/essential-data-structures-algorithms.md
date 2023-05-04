@@ -3,7 +3,7 @@ draft: false
 title: "日本作为移民目的地的优势"
 snippet: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
+    src: "https://plus.unsplash.com/premium_photo-1673998269850-8f953fd2fe0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW4lMjBhaXJwb3J0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     alt: "data structures & algorithms"
 }
 publishDate: "2022-11-09 16:39"

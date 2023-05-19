@@ -7,9 +7,9 @@ image: {
     alt: "data structures & algorithms"
 }
 publishDate: "2022-11-09 16:39"
-category: "Courses"
-author: "Marcell Ziemann"
-tags: [webdev, tailwindcss, frontend]
+category: "Advantage"
+author: "Zhang Dapeng"
+tags: [Migration, Destination, Services]
 ---
 
 近年来，越来越多的中国人想要移居海外，而日本已成为中国人移民的第二大目的地。根据全球化智库与西南财经大学发展研究院研究编写，社会科学文献出版社出版的《中国国际移民报告2020》，其中的数据显示，截至2019年, 中国移民海外的人数已经达到1073万人，成为世界上第三大移民输出国，中国人移民最多的前五个国家，分别是美国（2899267人）；日本（784763人）；加拿大（691489人）；澳大利亚（641624人）；韩国（620295人）。

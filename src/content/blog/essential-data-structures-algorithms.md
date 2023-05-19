@@ -7,7 +7,7 @@ image: {
     alt: "data structures & algorithms"
 }
 publishDate: "2023-05-19 20:30"
-category: "Advantage"
+category: "Tutorials"
 author: "Zhang Dapeng"
 tags: [Migration, Destination, Services]
 ---

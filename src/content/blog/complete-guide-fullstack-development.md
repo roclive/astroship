@@ -9,7 +9,7 @@ image: {
 publishDate: "2023-05-19 20:30"
 category: "projects"
 author: "Zhang Dapeng"
-tags: [Acquisitions,Franchise,projects]
+tags: [Acquisitions,Franchise,projects] 
 ---
 事业项目:
 一是收购拟转让的公司，我们根据客户的要求寻求符合要求和条件的转让公司。

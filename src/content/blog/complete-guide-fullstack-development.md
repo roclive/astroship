@@ -9,7 +9,8 @@ image: {
 publishDate: "2023-05-19 20:30"
 category: "projects"
 author: "Zhang Dapeng"
-tags: [Acquisitions, Franchise]
+tags: [Acquisitions,Franchise,projects]
 ---
+事业项目:
 一是收购拟转让的公司，我们根据客户的要求寻求符合要求和条件的转让公司。
 二是新设公司，包括便利店、餐饮店、自助洗衣房、自动贩卖等加盟式店铺，为中小个体经营主服务。

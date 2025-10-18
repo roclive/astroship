@@ -15,6 +15,7 @@ export async function getStaticPaths() {
 // Get the entry directly from the prop on render
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+const hasTags = Array.isArray(entry.data.tags) && entry.data.tags.length > 0;
 ---
 
 <Layout title={entry.data.title}>
@@ -37,14 +38,14 @@ const { Content } = await entry.render();
           datetime={entry.data.publishDate.toISOString()}>
           {entry.data.publishDate.toDateString()}
         </time>
-        <span class="text-gray-400 hidden md:block">•</span>
-        <div class="w-full md:w-auto flex flex-wrap gap-3">
-          {
-            entry.data.tags.map((tag) => (
+        {hasTags && <span class="text-gray-400">•</span>}
+        {hasTags && (
+          <div class="w-full md:w-auto flex flex-wrap gap-3">
+            {entry.data.tags.map((tag) => (
               <span class="text-sm text-gray-500">#{tag}</span>
-            ))
-          }
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
 

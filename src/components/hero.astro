@@ -1,0 +1,42 @@
+---
+import { Picture } from "@astrojs/image/components";
+import heroImage from "assets/hero.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      src={heroImage}
+      alt="Astronaut in the air"
+      widths={[200, 400, 600]}
+      aspectRatio="4:3"
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      シンドラーコンサルティング合同会社(サイト構築中)
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      シンドラーコンサルティングのAIチームは日本語化のLLMを作っています。ChatGPTなどは、再帰ニューラルネットワーク（RNN）とセルフアテンションメカニズムを基にした生成型言語モデルであり、その構造はモジュラー分割（Modular Decomposition）に適しています。
+      モジュラー分割は、大規模なニューラルネットワークを複数の独立したモジュールに分割し、各モジュールが特定の機能やタスクを担当するようにします。
+      一つの関連技術は言語adapterです（モジュラー分割の一つ手法です）。
+      PEFT、LORAなどの手法はもちろん、さらに高度なモジュラー分割手法を使って、よりいい性能を得ることができます。
+      費用の面もありますが、もう一つ着目する面は解釈性です。博士課程の時から、ずっとモデルの分割を考えていました。
+      モジュラー分割により、ChatGPTを柔軟に拡張やカスタマイズすることができます。例えば、特定のタスクに対して個別のモジュールのトレーニングを行ったり、異なるデバイス上で異なるモジュールを並列処理したりすることが可能です。また、このような分割はモデルの解釈性やデバッグ能力を向上させ、全体的なモデルの複雑性を低減するのに役立ちます。
+    </p>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      当社はスタートアップのコンサルティング会社であり、プロジェクトの選定、調査、財務分析、契約交渉、取引構造などの専門アドバイスを提供する、深い専門知識と経験豊富なアドバイザーのチームで構成されています。
+    </p>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      辛德勒咨询公司是您可靠的合作伙伴。我们将竭尽全力帮助您实现目标，创造更大的价值。
+    </p>
+
+  </div>
+</main>

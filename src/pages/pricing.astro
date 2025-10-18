@@ -1,0 +1,53 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="Products & Solutions - Schindler-JP">
+  <Container>
+    <section class="py-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">AIシステム製品ラインナップ</h1>
+      <p class="mt-4 text-lg text-slate-600">お客様のニーズに合わせた革新的なAIソリューションをご提案します</p>
+    </section>
+    <section class="grid md:grid-cols-2 gap-10 py-8">
+      <!-- スタンダードプラン -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-center">
+        <img src="/image/ai_system_standard.svg" class="w-32 mb-4" alt="標準版システム構成図"/>
+        <h2 class="font-bold text-2xl mb-2">生成AI（ローカルLLM）統合UI・API<br/>標準プラン</h2>
+        <ul class="mb-3 text-left text-slate-600 list-disc list-inside">
+          <li>業種/業務に応じた生成系AI導入オールインワン</li>
+          <li>ローカル動作型LLM：セキュアでカスタマイズ柔軟</li>
+          <li>用途例：劇団向けシナリオ自動生成、出版社向け資料抽出生成、物流向け申告書自動化</li>
+          <li>オンライン編集と自動ドキュメント生成/出力対応</li>
+          <li>一般法人・中小企業向けに最適</li>
+        </ul>
+        <a href="mailto:ai@schindler-jp.com" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mt-auto">詳細・デモ相談</a>
+      </div>
+      <!-- プレミアムプラン -->
+      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-center">
+        <img src="/image/ai_system_premium.svg" class="w-32 mb-4" alt="プレミアムシステム構成図"/>
+        <h2 class="font-bold text-2xl mb-2">生成AI（ローカルLLM）統合UI・API<br/>プレミアムプラン</h2>
+        <ul class="mb-3 text-left text-slate-600 list-disc list-inside">
+          <li>標準版すべての機能＋データ連携・専用カスタマイズ</li>
+          <li>業界/ケース別の高度最適化 & モデル微調整</li>
+          <li>既存システム連携や自動化ワークフローの拡張</li>
+          <li>専任担当による優先サポート・技術対応</li>
+          <li>大容量データ・複雑資料の質保証/分析機能</li>
+        </ul>
+        <a href="mailto:ai@schindler-jp.com" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mt-auto">プレミアム相談</a>
+      </div>
+    </section>
+    <!-- システム構成ダイアグラム -->
+    <section class="py-12 text-center">
+      <h2 class="text-xl md:text-2xl font-bold mb-4">システム基本構成</h2>
+      <img src="/image/ai_system_standard.svg" class="mx-auto w-80 mb-2" alt="システム構成" />
+      <p class="text-slate-500">詳細な技術仕様はお問い合わせください。</p>
+    </section>
+    <!-- CTA for custom needs -->
+    <section class="py-8 text-center">
+      <h2 class="text-xl md:text-2xl font-bold mb-2">カスタムAI相談・お見積り</h2>
+      <p class="mb-5 text-slate-500">特殊なAI導入や業務課題解決ニーズについても、ぜひご相談ください。</p>
+      <a href="mailto:ai@schindler-jp.com" class="bg-blue-600 text-white px-8 py-3 rounded text-lg hover:bg-blue-700">無料相談・お問い合わせ</a>
+    </section>
+  </Container>
+</Layout>

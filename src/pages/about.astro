@@ -1,0 +1,58 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="About - Schindler-JP">
+  <Container>
+    <!-- 公司简介及理念 -->
+    <section class="py-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">Schindler-JPについて</h1>
+      <p class="mt-4 text-lg text-slate-600">イノベーションと卓越性への情熱で、未来を切り拓くコンサルティング＆AIソリューション企業。<br/>Professional AI & Consulting Team Empowering Your Vision.</p>
+    </section>
+    <!-- 团队卡片区 -->
+    <section class="py-12">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold mb-4">リーダー＆専門家チーム</h2>
+        <p class="text-slate-500">Passionate founders & experienced support staff</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+          <img src="/image/team_placeholder.svg" class="w-24 h-24 rounded-full mb-3" alt="John Zhang"/>
+          <h3 class="font-bold text-xl">John Zhang</h3>
+          <div class="text-sm text-slate-400">共同創設者・ロボティクス専門家</div>
+          <p class="mt-2 text-slate-600">名古屋大学博士/10年以上AI・ロボ研究開発。LLM・ロボット知能開発に深い見識。</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+          <img src="/image/team_placeholder.svg" class="w-24 h-24 rounded-full mb-3" alt="Eric Zhang"/>
+          <h3 class="font-bold text-xl">Eric Zhang</h3>
+          <div class="text-sm text-slate-400">共同創設者・シニアITコンサルタント</div>
+          <p class="mt-2 text-slate-600">名古屋大学卒。DX/IT課題解決の知見豊富なコンサル。</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+          <img src="/image/team_placeholder.svg" class="w-24 h-24 rounded-full mb-3" alt="Ligong Zheng"/>
+          <h3 class="font-bold text-xl">Ligong Zheng</h3>
+          <div class="text-sm text-slate-400">社長</div>
+          <p class="mt-2 text-slate-600">愛知産業大学卒、経営＆日中協業事例多数。幅広い海外ネットワーク。</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+          <img src="/image/team_placeholder.svg" class="w-24 h-24 rounded-full mb-3" alt="Hualiang Lee"/>
+          <h3 class="font-bold text-xl">Hualiang Lee</h3>
+          <div class="text-sm text-slate-400">共同創設者・法律顧問</div>
+          <p class="mt-2 text-slate-600">北京大学法学修士。中日企業/個人の国際法務・資金アドバイス。</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+          <img src="/image/team_placeholder.svg" class="w-24 h-24 rounded-full mb-3" alt="Steven Lin"/>
+          <h3 class="font-bold text-xl">Steven Lin</h3>
+          <div class="text-sm text-slate-400">技術サポートスペシャリスト</div>
+          <p class="mt-2 text-slate-600">豊富な技術知識でシステム導入・運用をサポート。</p>
+        </div>
+      </div>
+    </section>
+    <!-- 团队宣言区块 -->
+    <section class="py-8 text-center">
+      <h2 class="text-2xl font-semibold mb-2">ビジョンとミッション</h2>
+      <blockquote class="italic text-lg text-slate-600">“革新的な技術で社会・企業の未来を変革し、専門知識と情熱で最高の価値を提供します。”</blockquote>
+    </section>
+  </Container>
+</Layout>

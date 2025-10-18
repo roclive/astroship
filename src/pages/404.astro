@@ -1,0 +1,15 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="404 Not Found - Schindler-JP">
+  <Container>
+    <div class="min-h-[calc(100vh-16rem)] flex flex-col items-center justify-center text-center">
+      <h1 class="text-6xl font-bold mb-3 text-blue-700">404</h1>
+      <p class="text-lg text-slate-600 mb-3">お探しのページが見つかりません</p>
+      <p class="text-slate-500 mb-8">Sorry, this page does not exist or the link is incorrect.<br>ご不便をおかけし申し訳ありません。</p>
+      <a href="/" class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition">ホームへ戻る</a>
+    </div>
+  </Container>
+</Layout>

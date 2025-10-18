@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+// 保持原有新闻内容收集逻辑
+const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+publishedBlogEntries.sort(function (a, b) {
+  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+});
+
+<Layout title="最新情報・ニュース - Schindler-JP">
+  <Container>
+    <!-- 新闻页面标题+说明区块 -->
+    <section class="py-10 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold">最新情報・ニュース</h1>
+      <p class="mt-4 text-lg text-slate-600">AI技術の最新動向・お知らせ・イベント・事例等、企業の重要ニュースをお届けします</p>
+    </section>
+    <!-- 资讯新闻卡片区 -->
+    <main class="mt-5">
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        {
+          publishedBlogEntries.map((blogPostEntry, index) => (
+            <li key={blogPostEntry.slug} class="bg-white rounded-xl shadow p-6 flex flex-col justify-between h-full">
+              <a href={`/blog/${blogPostEntry.slug}`}
+                class="block hover:opacity-80 transition">
+                <div class="flex gap-2 items-center text-slate-400 text-xs mb-2">
+                  <span>{blogPostEntry.data.category}</span>
+                  <span>•</span>
+                  <time datetime={blogPostEntry.data.publishDate.toISOString()}>{blogPostEntry.data.publishDate.toLocaleDateString()}</time>
+                </div>
+                <h2 class="text-lg font-semibold mb-1 text-gray-800">{blogPostEntry.data.title}</h2>
+                <p class="text-slate-500 mb-2 text-sm line-clamp-3">{blogPostEntry.data.excerpt || "最新のAI事例や企業動向を分かりやすくご紹介。"}</p>
+                <div class="flex items-center gap-2 mt-auto text-xs text-slate-500">
+                  <span>{blogPostEntry.data.author}</span>
+                </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      {publishedBlogEntries.length === 0 && (
+        <div class="text-center text-slate-500 my-8">まだ記事がありません。</div>
+      )}
+    </main>
+  </Container>
+</Layout>

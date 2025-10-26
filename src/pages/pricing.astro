@@ -6,48 +6,158 @@ import Container from "@components/container.astro";
 <Layout title="Products & Solutions - Schindler-JP">
   <Container>
     <section class="py-10 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold">AIシステム製品ラインナップ</h1>
-      <p class="mt-4 text-lg text-slate-600">お客様のニーズに合わせた革新的なAIソリューションをご提案します</p>
+      <h1 class="text-4xl md:text-5xl font-bold">AI製品ラインナップ</h1>
+      <p class="mt-4 text-lg text-slate-600">業務効率化を実現する4つのAIソリューション</p>
     </section>
-    <section class="grid md:grid-cols-2 gap-10 py-8">
-      <!-- スタンダードプラン -->
-      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-center">
-        <img src="/image/ai_system_standard.svg" class="w-32 mb-4" alt="標準版システム構成図"/>
-        <h2 class="font-bold text-2xl mb-2">生成AI（ローカルLLM）統合UI・API<br/>標準プラン</h2>
-        <ul class="mb-3 text-left text-slate-600 list-disc list-inside">
-          <li>業種/業務に応じた生成系AI導入オールインワン</li>
-          <li>ローカル動作型LLM：セキュアでカスタマイズ柔軟</li>
-          <li>用途例：劇団向けシナリオ自動生成、出版社向け資料抽出生成、物流向け申告書自動化</li>
-          <li>オンライン編集と自動ドキュメント生成/出力対応</li>
-          <li>一般法人・中小企業向けに最適</li>
-        </ul>
-        <a href="mailto:ai@schindler-jp.com" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mt-auto">詳細・デモ相談</a>
+
+    <!-- AI製品カテゴリー -->
+    <section class="py-12">
+      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        
+        <!-- 1. CRM -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">AI CRM システム</h2>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">顧客関係管理をAIで最適化。顧客データの分析から営業活動の効率化まで、包括的にサポートします。</p>
+          
+          <!-- 製品特徴エリア（後で追加） -->
+          <div class="border-t pt-6 mt-6">
+            <h3 class="font-semibold text-gray-900 mb-3">主な機能</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-1">•</span>
+                <span>顧客データの自動分析・予測</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-1">•</span>
+                <span>営業活動の最適化提案</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 mt-1">•</span>
+                <span>カスタマーサポート自動化</span>
+              </li>
+              <!-- 後で追加する特徴をここに記載 -->
+            </ul>
+          </div>
+          <a href="mailto:ai@schindler-jp.com" class="mt-6 inline-block w-full text-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">詳細を問い合わせる</a>
+        </div>
+
+        <!-- 2. 物流システム -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">AI 物流システム</h2>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">物流業務の効率化とコスト削減を実現。配送ルート最適化から在庫管理まで、AIが全面サポート。</p>
+          
+          <!-- 製品特徴エリア（後で追加） -->
+          <div class="border-t pt-6 mt-6">
+            <h3 class="font-semibold text-gray-900 mb-3">主な機能</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>配送ルートの自動最適化</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>在庫予測・需要予測</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-600 mt-1">•</span>
+                <span>申告書類の自動生成</span>
+              </li>
+              <!-- 後で追加する特徴をここに記載 -->
+            </ul>
+          </div>
+          <a href="mailto:ai@schindler-jp.com" class="mt-6 inline-block w-full text-center px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">詳細を問い合わせる</a>
+        </div>
+
+        <!-- 3. 研修システム -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">AI 研修システム</h2>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">社員教育をAIでパーソナライズ。個々の学習進度に合わせた最適な研修プログラムを提供します。</p>
+          
+          <!-- 製品特徴エリア（後で追加） -->
+          <div class="border-t pt-6 mt-6">
+            <h3 class="font-semibold text-gray-900 mb-3">主な機能</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 mt-1">•</span>
+                <span>個別最適化された学習プラン</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 mt-1">•</span>
+                <span>進捗状況の自動分析・レポート</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 mt-1">•</span>
+                <span>AIによる質問応答サポート</span>
+              </li>
+              <!-- 後で追加する特徴をここに記載 -->
+            </ul>
+          </div>
+          <a href="mailto:ai@schindler-jp.com" class="mt-6 inline-block w-full text-center px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">詳細を問い合わせる</a>
+        </div>
+
+        <!-- 4. Chatbot -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">AI Chatbot</h2>
+          </div>
+          <p class="text-gray-600 mb-6 leading-relaxed">24時間対応の高度なAIチャットボット。顧客対応の自動化と顧客満足度の向上を実現します。</p>
+          
+          <!-- 製品特徴エリア（後で追加） -->
+          <div class="border-t pt-6 mt-6">
+            <h3 class="font-semibold text-gray-900 mb-3">主な機能</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start gap-2">
+                <span class="text-orange-600 mt-1">•</span>
+                <span>自然言語による高度な対話</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-600 mt-1">•</span>
+                <span>多言語対応（日本語・中国語・英語）</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-orange-600 mt-1">•</span>
+                <span>既存システムとの連携</span>
+              </li>
+              <!-- 後で追加する特徴をここに記載 -->
+            </ul>
+          </div>
+          <a href="mailto:ai@schindler-jp.com" class="mt-6 inline-block w-full text-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition">詳細を問い合わせる</a>
+        </div>
+
       </div>
-      <!-- プレミアムプラン -->
-      <div class="bg-white rounded-xl shadow p-7 flex flex-col items-center">
-        <img src="/image/ai_system_premium.svg" class="w-32 mb-4" alt="プレミアムシステム構成図"/>
-        <h2 class="font-bold text-2xl mb-2">生成AI（ローカルLLM）統合UI・API<br/>プレミアムプラン</h2>
-        <ul class="mb-3 text-left text-slate-600 list-disc list-inside">
-          <li>標準版すべての機能＋データ連携・専用カスタマイズ</li>
-          <li>業界/ケース別の高度最適化 & モデル微調整</li>
-          <li>既存システム連携や自動化ワークフローの拡張</li>
-          <li>専任担当による優先サポート・技術対応</li>
-          <li>大容量データ・複雑資料の質保証/分析機能</li>
-        </ul>
-        <a href="mailto:ai@schindler-jp.com" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mt-auto">プレミアム相談</a>
-      </div>
     </section>
-    <!-- システム構成ダイアグラム -->
-    <section class="py-12 text-center">
-      <h2 class="text-xl md:text-2xl font-bold mb-4">システム基本構成</h2>
-      <img src="/image/ai_system_standard.svg" class="mx-auto w-80 mb-2" alt="システム構成" />
-      <p class="text-slate-500">詳細な技術仕様はお問い合わせください。</p>
-    </section>
-    <!-- CTA for custom needs -->
-    <section class="py-8 text-center">
-      <h2 class="text-xl md:text-2xl font-bold mb-2">カスタムAI相談・お見積り</h2>
-      <p class="mb-5 text-slate-500">特殊なAI導入や業務課題解決ニーズについても、ぜひご相談ください。</p>
-      <a href="mailto:ai@schindler-jp.com" class="bg-blue-600 text-white px-8 py-3 rounded text-lg hover:bg-blue-700">無料相談・お問い合わせ</a>
+
+    <!-- CTA Section -->
+    <section class="py-16 text-center bg-gray-50 rounded-xl">
+      <h2 class="text-3xl font-bold mb-4">カスタムAIソリューションのご相談</h2>
+      <p class="mb-8 text-lg text-slate-600">お客様の業務課題に合わせた、最適なAIソリューションをご提案します</p>
+      <a href="mailto:ai@schindler-jp.com" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">無料相談・お問い合わせ</a>
     </section>
   </Container>
 </Layout>

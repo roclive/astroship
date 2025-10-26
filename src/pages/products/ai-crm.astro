@@ -144,30 +144,33 @@ import Container from "@components/container.astro";
       </div>
     </section>
 
-    <!-- 料金 -->
-    <section class="py-12 bg-blue-50 rounded-xl">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">料金</h2>
-        <div class="bg-white rounded-lg shadow-lg p-8">
-          <div class="text-center">
-            <div class="text-5xl font-bold text-blue-600 mb-3">¥660,000<span class="text-2xl text-gray-500">/年</span></div>
-            <p class="text-lg text-gray-600 mb-8">お客様のご要望に応じて最適なプランをご提案いたします</p>
-            <a href="/contact" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition shadow-lg">
-              お見積り・お問い合わせ
+    <!-- 料金・お問い合わせ -->
+    <section class="py-16">
+      <div class="max-w-4xl mx-auto">
+        <!-- 料金カード -->
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl p-10 mb-12">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">料金プラン</h2>
+          <div class="text-center mb-8">
+            <div class="inline-block bg-white rounded-xl shadow-md px-8 py-6 mb-4">
+              <div class="text-5xl font-bold text-blue-600">¥660,000<span class="text-2xl text-gray-500 font-normal">/年</span></div>
+            </div>
+            <p class="text-gray-600 text-lg">お客様のご要望に応じて最適なプランをご提案いたします</p>
+          </div>
+        </div>
+
+        <!-- お問い合わせCTA -->
+        <div class="text-center">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900">まずはお気軽にご相談ください</h3>
+          <p class="text-gray-600 mb-8">貴社のビジネス課題に最適なソリューションをご提案いたします</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
+              お問い合わせ
+            </a>
+            <a href="/blog" class="inline-block bg-white border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-lg text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition">
+              製品一覧に戻る
             </a>
           </div>
         </div>
-        <p class="text-center text-sm text-gray-600 mt-6">まずはお気軽にご相談ください。貴社に最適なプランをご提案いたします。</p>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-16 text-center">
-      <h2 class="text-3xl font-bold mb-4">AI CRM システムについて詳しく知りたい方へ</h2>
-      <p class="text-lg text-slate-600 mb-8">お客様のビジネスに最適なソリューションをご提案いたします</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">お問い合わせ</a>
-        <a href="/blog" class="inline-block bg-white border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-50 transition">サービス一覧に戻る</a>
       </div>
     </section>
   </Container>

@@ -97,33 +97,11 @@ const hasEntries = publishedBlogEntries.length > 0;
       </div>
     </section>
 
-    <!-- ニュース・ブログセクション -->
-    <section class="py-10 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center mb-4">最新情報</h2>
-      <p class="text-center text-lg text-slate-600 mb-12">AI技術の最新動向・お知らせ</p>
+    <!-- CTA Section -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">お問い合わせ</h2>
+      <p class="mb-8 text-lg text-slate-600">お客様の業務課題に合わせた、最適なAIソリューションをご提案します</p>
+      <a href="/contact" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">無料相談・お問い合わせ</a>
     </section>
-    <main class="mt-5">
-      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {hasEntries && publishedBlogEntries.map((blogPostEntry) => (
-          <li class="bg-white rounded-xl shadow p-6 flex flex-col justify-between h-full">
-            <a href={`/blog/${blogPostEntry.slug}`} class="block hover:opacity-80 transition">
-              <div class="flex gap-2 items-center text-slate-400 text-xs mb-2">
-                <span>{blogPostEntry.data.category}</span>
-                <span>•</span>
-                <time datetime={blogPostEntry.data.publishDate.toISOString()}>{blogPostEntry.data.publishDate.toLocaleDateString()}</time>
-              </div>
-              <h2 class="text-lg font-semibold mb-1 text-gray-800">{blogPostEntry.data.title}</h2>
-              <p class="text-slate-500 mb-2 text-sm line-clamp-3">{blogPostEntry.data.excerpt || "最新のAI事例や企業動向を分かりやすくご紹介。"}</p>
-              <div class="flex items-center gap-2 mt-auto text-xs text-slate-500">
-                <span>{blogPostEntry.data.author}</span>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
-      {!hasEntries && (
-        <div class="text-center text-slate-500 my-8 col-span-3">まだ記事がありません。</div>
-      )}
-    </main>
   </Container>
 </Layout>

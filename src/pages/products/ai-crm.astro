@@ -53,48 +53,64 @@ import Container from "@components/container.astro";
     </section>
 
     <!-- 導入メリット -->
-    <section class="py-12">
+    <section class="py-12 mb-12">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-10">導入メリット</h2>
-        <div class="space-y-6">
-          <div class="flex gap-4 items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="flex gap-4 items-start bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
             <div>
-              <h3 class="font-bold text-xl mb-2">営業生産性の向上</h3>
-              <p class="text-gray-600">AIによる顧客分析とリード優先順位付けにより、営業担当者は最も成約可能性の高い顧客に集中できます。</p>
+              <h3 class="font-bold text-lg mb-2">営業生産性の向上</h3>
+              <p class="text-gray-600 text-sm">AIによる顧客分析とリード優先順位付けにより、営業担当者は最も成約可能性の高い顧客に集中できます。</p>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+          <div class="flex gap-4 items-start bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
             <div>
-              <h3 class="font-bold text-xl mb-2">顧客満足度の向上</h3>
-              <p class="text-gray-600">パーソナライズされた対応と迅速なサポートにより、顧客体験が向上し、リピート率が上昇します。</p>
+              <h3 class="font-bold text-lg mb-2">顧客満足度の向上</h3>
+              <p class="text-gray-600 text-sm">パーソナライズされた対応と迅速なサポートにより、顧客体験が向上し、リピート率が上昇します。</p>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+          <div class="flex gap-4 items-start bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
             <div>
-              <h3 class="font-bold text-xl mb-2">データドリブンな意思決定</h3>
-              <p class="text-gray-600">リアルタイムのダッシュボードと予測分析により、経営層は迅速かつ的確な判断が可能になります。</p>
+              <h3 class="font-bold text-lg mb-2">データドリブンな意思決定</h3>
+              <p class="text-gray-600 text-sm">リアルタイムのダッシュボードと予測分析により、経営層は迅速かつ的確な判断が可能になります。</p>
             </div>
           </div>
-          <div class="flex gap-4 items-start">
-            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+          <div class="flex gap-4 items-start bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
             <div>
-              <h3 class="font-bold text-xl mb-2">業務効率化とコスト削減</h3>
-              <p class="text-gray-600">定型業務の自動化により、人的リソースをより戦略的な業務に配分できます。</p>
+              <h3 class="font-bold text-lg mb-2">業務効率化とコスト削減</h3>
+              <p class="text-gray-600 text-sm">定型業務の自動化により、人的リソースをより戦略的な業務に配分できます。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 料金 -->
+    <section class="py-12 mb-12">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg p-10">
+          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">料金プラン</h2>
+          <div class="text-center">
+            <div class="inline-block bg-white rounded-xl shadow-md px-8 py-6 mb-4">
+              <div class="text-5xl font-bold text-blue-600">¥660,000<span class="text-2xl text-gray-500 font-normal">/年</span></div>
+              <p class="text-sm text-gray-500 mt-2">（税抜価格）</p>
+            </div>
+            <p class="text-gray-600 text-lg">お客様のご要望に応じて最適なプランをご提案いたします</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- 導入事例 -->
-    <section class="py-12 bg-blue-50 rounded-xl">
+    <section class="py-12 mb-12">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-center mb-10">導入事例</h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="bg-white rounded-lg p-6 shadow-md border border-gray-100">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                 <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,7 +133,7 @@ import Container from "@components/container.astro";
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg p-6 shadow-md">
+          <div class="bg-white rounded-lg p-6 shadow-md border border-gray-100">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                 <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,33 +160,18 @@ import Container from "@components/container.astro";
       </div>
     </section>
 
-    <!-- 料金・お問い合わせ -->
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto">
-        <!-- 料金カード -->
-        <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-xl p-10 mb-12">
-          <h2 class="text-3xl font-bold text-center mb-8 text-gray-900">料金プラン</h2>
-          <div class="text-center mb-8">
-            <div class="inline-block bg-white rounded-xl shadow-md px-8 py-6 mb-4">
-              <div class="text-5xl font-bold text-blue-600">¥660,000<span class="text-2xl text-gray-500 font-normal">/年</span></div>
-              <p class="text-sm text-gray-500 mt-2">（税抜価格）</p>
-            </div>
-            <p class="text-gray-600 text-lg">お客様のご要望に応じて最適なプランをご提案いたします</p>
-          </div>
-        </div>
-
-        <!-- お問い合わせCTA -->
-        <div class="text-center">
-          <h3 class="text-2xl font-bold mb-4 text-gray-900">まずはお気軽にご相談ください</h3>
-          <p class="text-gray-600 mb-8">貴社のビジネス課題に最適なソリューションをご提案いたします</p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl">
-              お問い合わせ
-            </a>
-            <a href="/blog" class="inline-block bg-white border-2 border-gray-300 text-gray-700 px-10 py-4 rounded-lg text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition">
-              製品一覧に戻る
-            </a>
-          </div>
+    <!-- お問い合わせCTA -->
+    <section class="py-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">まずはお気軽にご相談ください</h3>
+        <p class="text-gray-600 mb-8">貴社のビジネス課題に最適なソリューションをご提案いたします</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-md">
+            お問い合わせ
+          </a>
+          <a href="/blog" class="inline-block bg-white border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition">
+            製品一覧に戻る
+          </a>
         </div>
       </div>
     </section>

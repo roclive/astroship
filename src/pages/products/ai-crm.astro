@@ -144,95 +144,50 @@ import Container from "@components/container.astro";
       </div>
     </section>
 
-    <!-- 料金プラン -->
-    <section class="py-12 bg-gray-50 rounded-xl">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-10">料金プラン</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- スタンダードプラン -->
-          <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-            <div class="text-center mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">スタンダードプラン</h3>
-              <div class="text-4xl font-bold text-blue-600 mb-2">¥50,000<span class="text-lg text-gray-500">/月</span></div>
-              <p class="text-sm text-gray-500">初期費用：¥100,000</p>
-            </div>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="text-gray-700">ユーザー数：最大50名</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="text-gray-700">顧客データ管理</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="text-gray-700">基本的なAI分析機能</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="text-gray-700">メールサポート</span>
-              </li>
-            </ul>
-            <div class="text-center">
-              <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">お問い合わせ</a>
-            </div>
+    <!-- 料金 -->
+    <section class="py-12 bg-blue-50 rounded-xl">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">料金</h2>
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <div class="text-center mb-8">
+            <div class="text-5xl font-bold text-blue-600 mb-3">お見積り</div>
+            <p class="text-lg text-gray-600">お客様のご要望に応じて最適なプランをご提案いたします</p>
           </div>
-
-          <!-- エンタープライズプラン -->
-          <div class="bg-white rounded-lg shadow-lg p-8 border-2 border-blue-600 hover:shadow-xl transition relative">
-            <div class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-bold">おすすめ</div>
-            <div class="text-center mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">エンタープライズプラン</h3>
-              <div class="text-4xl font-bold text-blue-600 mb-2">¥150,000<span class="text-lg text-gray-500">/月</span></div>
-              <p class="text-sm text-gray-500">初期費用：¥300,000</p>
-            </div>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          <div class="border-t border-gray-200 pt-6">
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-gray-700">ユーザー数：無制限</span>
+                <span class="text-gray-700">ユーザー数・機能に応じた柔軟な価格設定</span>
               </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-gray-700">高度なAI予測分析</span>
+                <span class="text-gray-700">初期導入サポート込み</span>
               </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-gray-700">カスタマイズ対応</span>
+                <span class="text-gray-700">カスタマイズ・既存システム連携対応可能</span>
               </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
-                <span class="text-gray-700">専任担当者による24時間サポート</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg class="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                </svg>
-                <span class="text-gray-700">既存システム連携</span>
+                <span class="text-gray-700">運用サポート・保守メンテナンス</span>
               </li>
             </ul>
             <div class="text-center">
-              <a href="/contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">お問い合わせ</a>
+              <a href="/contact" class="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition shadow-lg">
+                お見積り・お問い合わせ
+              </a>
             </div>
           </div>
         </div>
-        <p class="text-center text-sm text-gray-500 mt-8">※ 価格は税抜表示です。詳細なお見積りはお問い合わせください。</p>
+        <p class="text-center text-sm text-gray-600 mt-6">まずはお気軽にご相談ください。貴社に最適なプランをご提案いたします。</p>
       </div>
     </section>
 

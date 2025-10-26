@@ -1,0 +1,128 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="AI CRM システム - Schindler-JP">
+  <Container>
+    <!-- Hero Section -->
+    <section class="py-12 text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-blue-100 rounded-2xl mb-6">
+        <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">AI CRM システム</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">顧客関係管理をAIで最適化。顧客データの分析から営業活動の効率化まで、包括的にサポートします。</p>
+    </section>
+
+    <!-- 主な機能 -->
+    <section class="py-12 bg-gray-50 rounded-xl mb-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">主な機能</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">顧客データの自動分析・予測</h3>
+            <p class="text-gray-600 text-sm">AIが顧客の行動パターンを分析し、購買予測や離脱リスクを自動検出。データドリブンな意思決定をサポートします。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">営業活動の最適化提案</h3>
+            <p class="text-gray-600 text-sm">最適なアプローチタイミングや提案内容をAIが提示。営業効率を最大化し、成約率を向上させます。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">カスタマーサポート自動化</h3>
+            <p class="text-gray-600 text-sm">AIチャットボットによる24時間対応。よくある質問への自動応答で、サポート業務を効率化します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 導入メリット -->
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">導入メリット</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">営業生産性の向上</h3>
+              <p class="text-gray-600">AIによる顧客分析とリード優先順位付けにより、営業担当者は最も成約可能性の高い顧客に集中できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">顧客満足度の向上</h3>
+              <p class="text-gray-600">パーソナライズされた対応と迅速なサポートにより、顧客体験が向上し、リピート率が上昇します。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">データドリブンな意思決定</h3>
+              <p class="text-gray-600">リアルタイムのダッシュボードと予測分析により、経営層は迅速かつ的確な判断が可能になります。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">業務効率化とコスト削減</h3>
+              <p class="text-gray-600">定型業務の自動化により、人的リソースをより戦略的な業務に配分できます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 適用業界 -->
+    <section class="py-12 bg-blue-50 rounded-xl">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">適用業界</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-blue-600">製造業</h3>
+            <p class="text-gray-600 text-sm">部品サプライヤーや機械メーカーの顧客管理、受注予測に最適</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-blue-600">小売・EC</h3>
+            <p class="text-gray-600 text-sm">顧客の購買履歴分析、パーソナライズドマーケティングに活用</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-blue-600">金融・保険</h3>
+            <p class="text-gray-600 text-sm">顧客ニーズの予測、クロスセル・アップセルの最適化</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-blue-600">サービス業</h3>
+            <p class="text-gray-600 text-sm">顧客満足度管理、リピート率向上施策の立案</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">AI CRM システムについて詳しく知りたい方へ</h2>
+      <p class="text-lg text-slate-600 mb-8">お客様のビジネスに最適なソリューションをご提案いたします</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-700 transition">お問い合わせ</a>
+        <a href="/blog" class="inline-block bg-white border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-blue-50 transition">サービス一覧に戻る</a>
+      </div>
+    </section>
+  </Container>
+</Layout>
+

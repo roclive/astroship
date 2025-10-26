@@ -1,0 +1,128 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="AI Chatbot - Schindler-JP">
+  <Container>
+    <!-- Hero Section -->
+    <section class="py-12 text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-orange-100 rounded-2xl mb-6">
+        <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">AI Chatbot</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">24時間対応の高度なAIチャットボット。顧客対応の自動化と顧客満足度の向上を実現します。</p>
+    </section>
+
+    <!-- 主な機能 -->
+    <section class="py-12 bg-gray-50 rounded-xl mb-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">主な機能</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">自然言語による高度な対話</h3>
+            <p class="text-gray-600 text-sm">最新のLLM技術により、人間のような自然な会話を実現。複雑な質問にも的確に回答します。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">多言語対応</h3>
+            <p class="text-gray-600 text-sm">日本語・中国語・英語に対応。グローバルな顧客対応を実現し、ビジネスの拡大をサポートします。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">既存システムとの連携</h3>
+            <p class="text-gray-600 text-sm">CRM、在庫管理、予約システムなど、既存システムとシームレスに連携。業務効率を最大化します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 導入メリット -->
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">導入メリット</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">24時間365日対応</h3>
+              <p class="text-gray-600">営業時間外でも顧客対応が可能。機会損失を防ぎ、顧客満足度を向上させます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">カスタマーサポートコストの削減</h3>
+              <p class="text-gray-600">よくある質問への自動応答により、サポート担当者の負担を70%以上削減。人件費の最適化を実現します。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">顧客データの収集・分析</h3>
+              <p class="text-gray-600">対話履歴から顧客ニーズを分析。マーケティング戦略の改善に活用できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">スケーラビリティ</h3>
+              <p class="text-gray-600">同時に何千もの問い合わせに対応可能。繁忙期でも待ち時間なしで対応できます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 適用業界 -->
+    <section class="py-12 bg-orange-50 rounded-xl">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">適用業界</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-orange-600">EC・小売業</h3>
+            <p class="text-gray-600 text-sm">商品問い合わせ、注文状況確認、返品対応の自動化</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-orange-600">金融・保険</h3>
+            <p class="text-gray-600 text-sm">口座照会、商品説明、申込手続きのサポート</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-orange-600">旅行・ホテル</h3>
+            <p class="text-gray-600 text-sm">予約受付、施設案内、よくある質問への対応</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-orange-600">医療・ヘルスケア</h3>
+            <p class="text-gray-600 text-sm">予約管理、症状相談、健康情報提供</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">AI Chatbot について詳しく知りたい方へ</h2>
+      <p class="text-lg text-slate-600 mb-8">お客様のカスタマーサポート課題に最適なソリューションをご提案いたします</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-orange-700 transition">お問い合わせ</a>
+        <a href="/blog" class="inline-block bg-white border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-orange-50 transition">サービス一覧に戻る</a>
+      </div>
+    </section>
+  </Container>
+</Layout>
+

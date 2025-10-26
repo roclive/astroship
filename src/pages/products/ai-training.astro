@@ -1,0 +1,128 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="AI 研修システム - Schindler-JP">
+  <Container>
+    <!-- Hero Section -->
+    <section class="py-12 text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-purple-100 rounded-2xl mb-6">
+        <svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">AI 研修システム</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">社員教育をAIでパーソナライズ。個々の学習進度に合わせた最適な研修プログラムを提供します。</p>
+    </section>
+
+    <!-- 主な機能 -->
+    <section class="py-12 bg-gray-50 rounded-xl mb-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">主な機能</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">個別最適化された学習プラン</h3>
+            <p class="text-gray-600 text-sm">AIが各社員のスキルレベル、学習スピード、理解度を分析し、最適な学習コンテンツとペースを自動調整します。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">進捗状況の自動分析・レポート</h3>
+            <p class="text-gray-600 text-sm">リアルタイムで学習進捗を可視化。管理者は各社員の習熟度を把握し、適切なサポートを提供できます。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">AIによる質問応答サポート</h3>
+            <p class="text-gray-600 text-sm">24時間対応のAIチューターが、学習中の疑問に即座に回答。学習効率を大幅に向上させます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 導入メリット -->
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">導入メリット</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">学習効率の最大化</h3>
+              <p class="text-gray-600">個々のペースに合わせた学習により、理解度が向上。従来の集合研修と比較して、学習時間を30-40%短縮できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">研修コストの削減</h3>
+              <p class="text-gray-600">オンライン化により、会場費、交通費、講師費用を大幅削減。時間と場所を選ばず学習できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">スキルギャップの可視化</h3>
+              <p class="text-gray-600">組織全体のスキルマップを自動生成。戦略的な人材育成計画の立案が可能になります。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">継続的な学習文化の醸成</h3>
+              <p class="text-gray-600">ゲーミフィケーション要素により、学習意欲を向上。自発的な学習習慣が定着します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 適用業界 -->
+    <section class="py-12 bg-purple-50 rounded-xl">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">適用業界</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-purple-600">IT・テクノロジー</h3>
+            <p class="text-gray-600 text-sm">プログラミング、新技術習得、資格取得支援</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-purple-600">製造業</h3>
+            <p class="text-gray-600 text-sm">安全教育、品質管理、技能伝承</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-purple-600">金融・保険</h3>
+            <p class="text-gray-600 text-sm">コンプライアンス研修、商品知識習得</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-purple-600">医療・介護</h3>
+            <p class="text-gray-600 text-sm">医療知識更新、接遇マナー、法令研修</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">AI 研修システムについて詳しく知りたい方へ</h2>
+      <p class="text-lg text-slate-600 mb-8">お客様の人材育成課題に最適なソリューションをご提案いたします</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-700 transition">お問い合わせ</a>
+        <a href="/blog" class="inline-block bg-white border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-purple-50 transition">サービス一覧に戻る</a>
+      </div>
+    </section>
+  </Container>
+</Layout>
+

@@ -1,0 +1,128 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+---
+
+<Layout title="AI 物流システム - Schindler-JP">
+  <Container>
+    <!-- Hero Section -->
+    <section class="py-12 text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-2xl mb-6">
+        <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">AI 物流システム</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">物流業務の効率化とコスト削減を実現。配送ルート最適化から在庫管理まで、AIが全面サポート。</p>
+    </section>
+
+    <!-- 主な機能 -->
+    <section class="py-12 bg-gray-50 rounded-xl mb-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">主な機能</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">配送ルートの自動最適化</h3>
+            <p class="text-gray-600 text-sm">AIが交通状況、配送先、車両状況を分析し、最短・最効率のルートを自動生成。燃料コストと配送時間を大幅削減します。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">在庫予測・需要予測</h3>
+            <p class="text-gray-600 text-sm">過去のデータと市場動向を分析し、将来の需要を高精度で予測。適正在庫の維持と欠品防止を実現します。</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-lg mb-2">申告書類の自動生成</h3>
+            <p class="text-gray-600 text-sm">輸出入に必要な書類を自動作成。通関手続きの効率化とヒューマンエラーの削減を実現します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 導入メリット -->
+    <section class="py-12">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">導入メリット</h2>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">配送コストの削減</h3>
+              <p class="text-gray-600">最適ルート選択により、燃料費を平均15-20%削減。配送時間の短縮で人件費も削減できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">在庫管理の最適化</h3>
+              <p class="text-gray-600">需要予測により過剰在庫と欠品を防止。倉庫コストの削減と販売機会の最大化を実現します。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">業務効率の向上</h3>
+              <p class="text-gray-600">書類作成の自動化により、事務作業時間を大幅削減。スタッフはより付加価値の高い業務に集中できます。</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">4</div>
+            <div>
+              <h3 class="font-bold text-xl mb-2">顧客満足度の向上</h3>
+              <p class="text-gray-600">配送時間の正確な予測と短縮により、顧客満足度が向上。リピート率の増加につながります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 適用業界 -->
+    <section class="py-12 bg-green-50 rounded-xl">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">適用業界</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-green-600">運送・配送業</h3>
+            <p class="text-gray-600 text-sm">宅配便、貨物輸送の効率化、ラストワンマイル配送の最適化</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-green-600">EC・小売業</h3>
+            <p class="text-gray-600 text-sm">在庫管理、需要予測、配送センター運営の最適化</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-green-600">製造業</h3>
+            <p class="text-gray-600 text-sm">部品調達、製品配送、サプライチェーン全体の最適化</p>
+          </div>
+          <div class="bg-white rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-2 text-green-600">貿易・輸出入業</h3>
+            <p class="text-gray-600 text-sm">通関書類の自動化、国際物流の効率化</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center">
+      <h2 class="text-3xl font-bold mb-4">AI 物流システムについて詳しく知りたい方へ</h2>
+      <p class="text-lg text-slate-600 mb-8">お客様の物流課題に最適なソリューションをご提案いたします</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-block bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-green-700 transition">お問い合わせ</a>
+        <a href="/blog" class="inline-block bg-white border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-green-50 transition">サービス一覧に戻る</a>
+      </div>
+    </section>
+  </Container>
+</Layout>
+
